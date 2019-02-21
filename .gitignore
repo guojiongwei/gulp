@@ -1,9 +1,10 @@
 # Build and Release Folders
 bin-debug/
 bin-release/
+node_modules/
 [Oo]bj/
 [Bb]in/
-
+package-lock.json
 # Other files and folders
 .settings/
 

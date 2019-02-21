@@ -1,0 +1,18 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body><input type="text" id="input" />
+  <script>var input = document.getElementById("input"); function AddEventInput(i) {
+    //这里就不做兼容了
+    i.addEventListener("blur",function(){
+      var value=i.value;
+      var reg=/(^[1-9]{1}[0-9]*$)|(^[0-9]*\.[0-9]{2}$)/
+      if(!reg.test(value)){
+      console.log("请输入大于0的整数或者保留两位小数")
+    }else{console.log("输入正确");};});}AddEventInput(input);</script>
+</body>
+
+</html>
